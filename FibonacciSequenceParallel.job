@@ -1,0 +1,11 @@
+
+#PBS -l walltime=00:00:05
+#PBS -N myjob2
+#PBS -l nodes=1
+
+
+cd $PBS_O_WORKDIR
+cat $PBS_NODEFILE
+
+./FibonacciSequenceParallel.o
+
